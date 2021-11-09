@@ -1,0 +1,1899 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#"
+     xml:base="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#BelongToSpatialThing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#BelongToSpatialThing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#belongToObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#belongToObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#BelongToSpatialThing"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#belongToSpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#belongToSpace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#BelongToSpatialThing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#boundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#boundedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#definedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#definedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#direction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#direction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasComplexity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasComplexity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasConstrainedGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasConstrainedGeometry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasEffectiveCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasEffectiveCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFirstEdgeElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFirstEdgeElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Edge"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasGeometricConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasGeometricConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMaximumVertex -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMaximumVertex">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vertex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMinimumVertex -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMinimumVertex">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vertex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMobility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMobility">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Mobility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMotionConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMotionConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasOrthogonalAxis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasOrthogonalAxis">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasPosition">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasReferenceFrame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasReferenceFrame">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasReferentialDirection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasReferentialDirection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#direction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ReferenceDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasSection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasSection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasTargetObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasTargetObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#isNarrowFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#isNarrowFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#objectHas3DShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#objectHas3DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas3DShape"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#objectHasLocalRF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#objectHasLocalRF">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasReferenceFrame"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#object_has_attractivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#object_has_attractivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatial_thing_has_attractivity"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#polygonHas2DShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#polygonHas2DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas2DShape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#polygonNormalOrientationHasDescriptiveRF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#polygonNormalOrientationHasDescriptiveRF">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasReferenceFrame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#sectionHas2DShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#sectionHas2DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas2DShape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#sectionNormalOrientationHasDescriptiveRF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#sectionNormalOrientationHasDescriptiveRF">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasReferenceFrame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spaceHas3DShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spaceHas3DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas3DShape"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spaceHasDescriptiveRF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spaceHasDescriptiveRF">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasReferenceFrame"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#space_has_attractivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#space_has_attractivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatial_thing_has_attractivity"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas2DShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas2DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasShape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas3DShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHas3DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasShape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasReferenceFrame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasReferenceFrame">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatialThingHasShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatial_thing_has_attractivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spatial_thing_has_attractivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#surroundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#surroundedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has2DShape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has2DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has3DShape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has3DShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasComplexity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasComplexity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFixedAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFixedAngle">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMajorRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMajorRadius">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMinorRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMinorRadius">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#isThreaded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#isThreaded">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#vector_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#vector_data">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#x">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#vector_data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#y">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#vector_data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#z -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#z">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#vector_data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialThingQuality"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Against -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Against">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialRelationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#MathematicalOrComputationalThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Aligned -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Aligned">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialRelationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#AngleConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#AngleConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractivity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractiveness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Exclusiveness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Semi-Attractiveness"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialThingQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#AxisAlignedDirection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#AxisAlignedDirection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ReferenceDirection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Border -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Border">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#BoundingBox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#BoundingBox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CartesianCoordinateSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMaximumVertex"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vertex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMinimumVertex"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vertex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasPosition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasReferenceFrame"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CartesianCoordinateSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CartesianCoordinateSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CoordinateSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CoincidenceConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CoincidenceConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ConcentricityConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ConcentricityConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ConicalSurface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ConicalSurface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFixedAngle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Constraint">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ContactConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ContactConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CoordinateSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CoordinateSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#MathematicalThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CurvedFlatFace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CurvedFlatFace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Plane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CyclicalFlatFace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CyclicalFlatFace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CurvedFlatFace"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has2DShape"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cycle</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylinderCylinderCoincidenceConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylinderCylinderCoincidenceConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CoincidenceConstraint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylindrialSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasConstrainedGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylindrialSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasLabel"/>
+                <owl:hasValue>CylinderCylinderCoincidenceConstraint</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylinderCylinderConcentricityConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylinderCylinderConcentricityConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ConcentricityConstraint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylindrialSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasConstrainedGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylindrialSurface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasLabel"/>
+                <owl:hasValue>CylinderCylinderConcentricityConstraint</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylindrialSurface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylindrialSurface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#DistanceConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#DistanceConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Edge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Edge">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000142"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#boundedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vertex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#EllipticalFlatFace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#EllipticalFlatFace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CurvedFlatFace"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has2DShape"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ellipse</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMajorRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMinorRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Edge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFirstEdgeElement"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Edge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasPosition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasReferenceFrame"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CartesianCoordinateSystem"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#surroundedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spaceHas3DShape"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spaceHasDescriptiveRF"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Information_content_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Information_content_entity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#MathematicalOrComputationalThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#MathematicalOrComputationalThing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Information_content_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#MathematicalThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#MathematicalThing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#MathematicalOrComputationalThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Mobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Mobility">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Fixed"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Movable"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialThingQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ObjectSpaceComplexityConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ObjectSpaceComplexityConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasConstrainedGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasLabel"/>
+                <owl:hasValue>ObjectSpaceComplexityConstraint</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasComplexity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ParallelismConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ParallelismConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#PentagonalPolygon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#PentagonalPolygon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Polygon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has2DShape"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pentagon</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#PerpendicularityConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#PerpendicularityConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FreeSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Plane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#PlanePlaneContactConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#PlanePlaneContactConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ContactConstraint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Plane"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasConstrainedGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Plane"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasLabel"/>
+                <owl:hasValue>PlanePlaneContactConstraint</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Point">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Polygon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Polygon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Plane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Position">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ReferenceDirection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ReferenceDirection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#RetangularPolygon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#RetangularPolygon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Polygon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has2DShape"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retangular</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#RigidBody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#RigidBody">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasFace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMobility"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Mobility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#objectHas3DShape"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#objectHasLocalRF"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#FrameOfReference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ShapeOfSpatialThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ShapeOfSpatialThing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialThingQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialRelationship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialRelationship">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialThingQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpatialThingQuality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpecificationofLocalMotionplanning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpecificationofLocalMotionplanning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasGeometricConstraint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#definedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasTargetObject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SphericalSurface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SphericalSurface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TangencyConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TangencyConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ThreadedCylindrialSurface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ThreadedCylindrialSurface">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CylindrialSurface"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#isThreaded"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ToroidalSurface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ToroidalSurface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMajorRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasMinorRadius"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangluarFace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangluarFace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#boundedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Edge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangularPolygon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangularPolygon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Polygon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#has2DShape"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triangle</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangularedPolygon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangularedPolygon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Polygon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangluarFace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangularedSurface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangularedSurface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Surface"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#TriangluarFace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#CartesianCoordinateSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#x"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#y"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#z"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vertex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Vertex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Point"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ShapeOfSpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ShapeOfSpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#local_motion_planning_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#local_motion_planning_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#SpecificationofLocalMotionplanning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractiveness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractiveness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Box -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Box">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Circle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Circle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Cone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Cone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Cylinder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Cylinder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Exclusiveness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Exclusiveness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Fixed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Fixed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Mobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Haxagon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Haxagon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Movable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Movable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Mobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Pentagnon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Pentagnon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Semi-Attractiveness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Semi-Attractiveness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Attractivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Sphere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Sphere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_3DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Square">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Triangle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Triangle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#_2DShape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#XAxisAligned -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#XAxisAligned">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#AxisAlignedDirection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#YAxisAligned -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#YAxisAligned">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#AxisAlignedDirection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ZAxisAligned -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ZAxisAligned">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#AxisAlignedDirection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Box"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Cone"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#planning_process">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definitions for object-space complexity constraint (bounding box alignment -- used when other constraints haven&apos;t been defined)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#local_motion_planning_process"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#planning_process"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#planning_process"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasTargetObject"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#o"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#definedIn"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#o"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#p"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#ObjectSpaceComplexityConstraint"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#o"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasConstrainedGeometry"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#p"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasGeometricConstraint"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getting the constraints for a given local motion planning process based on its targted place and the surrounding faces</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Place"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#Face"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#surroundedBy"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#GeometricConstraint"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasBaseGeometry"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#f"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#local_motion_planning_process"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#planning_process"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#contains"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#planning_process"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#definedIn"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#p"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#hasGeometricConstraint"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#spec"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2017/7/PlanningKnowledgeBase#constraint"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

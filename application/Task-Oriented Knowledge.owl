@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#"
+     xml:base="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Align -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Align">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationTaskPrimitive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Color">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#DirectionalSpatialPrimitive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#DirectionalSpatialPrimitive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Insert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Insert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationTaskPrimitive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationConstraint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationTaskPrimitive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationTaskPrimitive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationTaskPrimitive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#PositionalConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#PositionalConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Quality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#SequentialConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#SequentialConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Shape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ShapeConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ShapeConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Size">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Slide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Slide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationTaskPrimitive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/0/untitled-ontology-60#ManipulationTaskPrimitive"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
