@@ -11,4 +11,4 @@ Figure 1 shows the general architecture of the proposed ontology with some key c
 - The topology description module describes places (Place) and borders (Border) identified in the 3D simulation environment. It also illustrates their connectivity by constructing a topological graph (TopoGraph).
 -	The context description module provides the semantic description of rigid bodies (Rigid body), places, and borders. Such a kind of description includes the potential taxonomy (e.g., Container, Opening, Hole) and the related properties (Function, Color, Shape). We must note that this level of information heavily relies on the application (i.e., the manipulation task to be performed).
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![The general architecture of ENVOn]([https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png](https://github.com/PICS-LGP/ENVOn/blob/main/Picture3.jpg) "The general architecture of ENVOn")
