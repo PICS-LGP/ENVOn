@@ -1509,6 +1509,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#diagonal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#diagonal"/>
+    
+
+
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#first_diameter_length -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#first_diameter_length">
@@ -1670,121 +1676,93 @@
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#AffineTransformationMatrix3D -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#AffineTransformationMatrix3D">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#GeometricMathematicalTools"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Matrix"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a11"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a12"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a13"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a14"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a21"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a22"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a23"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a24"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a31"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a32"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a33"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a34"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a41"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a42"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a43"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a44"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RotationMatrix3D"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Matrix"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a11"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a12"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a13"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a14"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a21"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a22"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a23"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a24"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a31"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a32"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a33"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a34"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a41"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a42"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a43"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a44"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -1894,23 +1872,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SupplementaryGeometricPrimitive"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasRefVector"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasPassingPoint"/>
-                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1931,7 +1892,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasLocation"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasOrigin"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D"/>
                     </owl:Restriction>
@@ -2006,7 +1967,7 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingPlane"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Retangule3D"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Rectangle3D"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_length"/>
@@ -2016,29 +1977,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingDir"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingPlane"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Retangule3D"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_length"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2071,7 +2009,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Place"/>
     </owl:Class>
     
 
@@ -2213,38 +2150,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Circle3D -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Circle3D">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#BoundedPlane3D"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularCurve3D"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#BoundedPlane3D"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#BoundedPlane3D"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularCurve3D"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularCurve3D -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularCurve3D">
@@ -2283,6 +2188,35 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularPlane3D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularPlane3D">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#BoundedPlane3D"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularCurve3D"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasAxisPlacement3D"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#AxisPlacement3D"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#radius"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -2424,36 +2358,23 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingDir"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CylindricalSurface"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#height_volume3D"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingPlane"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularPlane3D"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_length"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CylindricalSurface"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#height_volume3D"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2463,15 +2384,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CylindricalSurface">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#GeometricPrimitive"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Curve3D"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vertex"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasAxisPlacement3D"/>
@@ -2937,7 +2849,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Optical_Property">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#realizable_entity"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#disposition"/>
     </owl:Class>
     
 
@@ -2945,10 +2856,15 @@
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Oriented_Bounding_Box -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Oriented_Bounding_Box">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SupplementaryGeometricPrimitive"/>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SupplementaryGeometricPrimitive"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasLocalReferenceFrame"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#3D_Cartesian_Coordinate_System"/>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasMaximumPoint"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -2961,21 +2877,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasMaximumPoint"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasMinimumPoint"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -3099,14 +3001,18 @@
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#GeometricPrimitive"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasPosition"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#GeometricPrimitive"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasPosition"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -3149,18 +3055,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RegularShapeQuality -->
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Rectangle3D -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RegularShapeQuality">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Quality"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#ShapeQuality"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Retangule3D -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Retangule3D">
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Rectangle3D">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3173,9 +3070,16 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Polygon3D"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Triangle3D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RegularShapeQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RegularShapeQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#ShapeQuality"/>
     </owl:Class>
     
 
@@ -3303,71 +3207,58 @@
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RotationMatrix3D -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RotationMatrix3D">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#GeometricMathematicalTools"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Matrix"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a11"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a12"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a13"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a21"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a22"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a23"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a31"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a32"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a33"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Matrix"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a11"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a12"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a13"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a21"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a22"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a23"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a31"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a32"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#a33"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -3510,15 +3401,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#GeometricPrimitive"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Curve3D"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vertex"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasAxisPlacement3D"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -3546,15 +3428,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#GeometricPrimitive"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Curve3D"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vertex"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasAxisPlacement3D"/>
@@ -3846,27 +3719,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#x"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#y"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#z"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -3924,7 +3776,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasLocation"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasOrigin"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D"/>
                     </owl:Restriction>
@@ -4339,6 +4191,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Pen1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Pen1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#RigidBody"/>
+        <hasLocalReferenceFrame rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#3DRF_Pen1"/>
+        <hasPointingDirection rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#pen_dir"/>
+        <hasStandardForm rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#cylin_volume"/>
+        <hasName>Pen1</hasName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#PentagnoalPrismPen -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#PentagnoalPrismPen">
@@ -4469,6 +4333,7 @@
         <bounded_by rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#LS1_Of_SweepingSurface_TriangularPrismVolume1"/>
         <bounded_by rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#LS2_Of_SweepingSurface_TriangularPrismVolume1"/>
         <bounded_by rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#LS3_Of_SweepingSurface_TriangularPrismVolume1"/>
+        <diagonal rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.31145</diagonal>
     </owl:NamedIndividual>
     
 
@@ -4586,7 +4451,7 @@
         <hasLocalReferenceFrame rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#3DRF_TriangularPrismPen"/>
         <hasOrigin rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Origin_TriangularPrismPen"/>
         <hasStandardForm rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#TriangularPrismVolume1"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriangularPrismPen</hasName>
+        <hasName>O3</hasName>
     </owl:NamedIndividual>
     
 
@@ -4598,6 +4463,17 @@
         <hasSweepingDir rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SweepingDir_TriangularPrismVolume1"/>
         <hasSweepingPlane rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SweepingSurface_TriangularPrismVolume1"/>
         <sweeping_length rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sweeping_length>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</y>
+        <z rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.0</z>
     </owl:NamedIndividual>
     
 
@@ -4642,6 +4518,102 @@
     
 
 
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#circle3d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#circle3d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularPlane3D"/>
+        <radius rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#cylin_volume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#cylin_volume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Cylinder"/>
+        <hasSweepingPlane rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#circle3d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#pen_dir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#pen_dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Direction"/>
+        <hasRefDirection rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Place"/>
+        <hasStandardForm rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place_volume"/>
+        <hasName>P2</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Place"/>
+        <hasLocalReferenceFrame rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#3DRF_TriangularPrismPen"/>
+        <hasStandardForm rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#rb_volume"/>
+        <hasName>P5</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place_sweeping_plane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place_sweeping_plane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Rectangle3D"/>
+        <diagonal rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.747255</diagonal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place_volume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place_volume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Block"/>
+        <hasSweepingPlane rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#place_sweeping_plane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#rb_volume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#rb_volume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#TriangularPrism"/>
+        <hasSweepingDir rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_dir_p5_volume"/>
+        <hasSweepingPlane rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_plane_p5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_dir_p5_volume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_dir_p5_volume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</y>
+        <z rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.0</z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_plane_p5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_plane_p5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Triangle3D"/>
+        <diagonal rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.31135</diagonal>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#vector3D_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#vector3D_1">
@@ -4649,6 +4621,14 @@
         <x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</x>
         <y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</y>
         <z rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.0</z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#3DRF_Pen1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#3DRF_Pen1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#3D_Cartesian_Coordinate_System"/>
     </owl:NamedIndividual>
     
 
@@ -4705,17 +4685,6 @@
             </owl:Restriction>
         </owl:intersectionOf>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Polygon3D"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#BoundedPlane3D"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularCurve3D"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Circle3D"/>
     </owl:Class>
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -4899,33 +4868,6 @@
     </owl:Class>
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Polygon3D"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#LineSegment3D"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Retangule3D"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SupplementaryGeometricPrimitive"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasRefVector"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasPassingPoint"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Axis3D"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D"/>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#isFlat"/>
@@ -4990,22 +4932,6 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Cylinder"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CylindricalSurface"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#height_volume3D"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
     </owl:Class>
     <owl:Class>
@@ -5018,17 +4944,6 @@
             </owl:Restriction>
         </owl:intersectionOf>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Sphere"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#bounded_by"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SphericalSurface"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
     </owl:Class>
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -5063,48 +4978,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingPlane"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Retangule3D"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_length"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Block"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingDir"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingPlane"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Retangule3D"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_length"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingDir"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingPlane"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Triangle3D"/>
             </owl:Restriction>
             <owl:Restriction>
@@ -5114,27 +4987,6 @@
             </owl:Restriction>
         </owl:intersectionOf>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#TriangularPrism"/>
-    </owl:Class>
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingDir"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vector3D"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#hasSweepingPlane"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Triangle3D"/>
-            </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#sweeping_length"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
     </owl:Class>
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -5226,82 +5078,6 @@
         </owl:oneOf>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CSG_BoolOperation"/>
     </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#BREP3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CSG3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CellDecomposition3D"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Block"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Cone"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Cylinder"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Sphere"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Torus"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#TriangularPrism"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Circle3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Ellipse3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Polygon3D"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CircularCurve3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#EllipticCurve3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Line3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#LineSegment3D"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Closed_Shell"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Edge"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Face"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Face_bound"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Solid_Boundary"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Vertex"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#ConicalSurface"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#CylindricalSurface"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Plane3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#SphericalSurface"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#ToroidalSurface"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Curve3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Point3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Surface3D"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#Volume3D"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#EnvironmentComplexity"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#EnvironmentCongestion"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#FormConvexity"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#ObjectMobility"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yingshen/ontologies/2018/11/3DEnvironmentKnowledgeModel#ShapeQuality"/>
-        </owl:members>
-    </rdf:Description>
     
 
 
@@ -5437,5 +5213,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
